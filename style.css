@@ -1,0 +1,42 @@
+div {
+    display: flex;
+    padding: 0rem;
+}
+
+/* PADRÃO CIRCULAR DO FUNDO */
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0rem;
+    padding: 0rem;
+
+    background-color: black;
+    
+    display:flex;
+    flex-wrap: wrap; /* envolve o conteúdo na DIV */
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    overflow: hidden;
+}
+
+.circle-pattern {
+    width: fit-content;
+    height: fit-content;
+
+    margin: 5rem; /* TAMANHO DA LISTRA PRETA*/
+
+    border: 5rem solid #ff1112; /* TAMANHO DA LISTRA VERMELHA*/
+    border-radius: 50%;
+
+    position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+    .circle-pattern {
+    margin: 2.5rem; /* TAMANHO DA LISTRA PRETA*/
+
+    border: 2.5rem solid #ff1112; /* TAMANHO DA LISTRA VERMELHA*/
+}
+}
