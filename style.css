@@ -1,24 +1,31 @@
-div {
-    display: flex;
-    padding: 0rem;
-}
-
 /* PADRÃO CIRCULAR DO FUNDO */
 body {
-    width: 100vw;
-    height: 100vh;
     margin: 0rem;
     padding: 0rem;
+    overflow: hidden;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.background {
+    margin: 0rem;
+    padding: 0rem;
+    overflow: hidden;
+
+    width: 100vw;
+    height: 100vh;
 
     background-color: black;
-    
+
+    z-index: 0;
     display:flex;
     flex-wrap: wrap; /* envolve o conteúdo na DIV */
     flex-direction: column;
     justify-content: center;
     align-content: center;
-
-    overflow: hidden;
 }
 
 .circle-pattern {
@@ -39,4 +46,22 @@ body {
 
     border: 2.5rem solid #ff1112; /* TAMANHO DA LISTRA VERMELHA*/
 }
+}
+
+/* CONTEÚDO */
+.content {
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 10000;
+    position: absolute;
+
+    color: black;
+    font-style: italic;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
