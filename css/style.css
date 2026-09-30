@@ -80,7 +80,18 @@ body {
     }
 }
 
+@media only screen and (max-width: 1024px) {
+    .logo{
+        width: 60vw;
+        height: 30vw;
+    }
+}
 /* CAIXAS DE RECORTE DA FONTE*/
+div > p {
+    margin: 0rem;
+    padding: 0rem;
+}
+
 .cabecalho {
     display: flex;
     flex-direction: row;
