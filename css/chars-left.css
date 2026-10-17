@@ -1,0 +1,100 @@
+p, h2, h3{
+    font-family: 'Anton', sans-serif;
+}
+
+h1{
+    position: absolute;
+    
+    display: flex;
+
+    font-size: 6rem;
+    font-style: italic;
+
+    top: 1rem;
+    right: 5rem;
+    
+    color: white;
+}
+
+h2{
+    position: absolute;
+    top: 10rem;
+    right: 5rem;
+
+    font-size: 2rem;
+    font-style: italic;
+    color: white;
+}
+
+h3{
+    position: absolute;
+    top: 20rem;
+    right: 5rem;
+
+    font-size: 2rem;
+    font-style: italic;
+    color: white;
+}
+
+#char{
+    position: absolute;
+
+    z-index: 1000;
+    width: 80vw;
+    height: 100vh;
+    margin-left:-70rem;
+}
+
+#presentation{
+    border: solid 0.4rem white;
+
+    transform: skewX(10deg); 
+
+    color: white;
+
+    padding: 1rem;
+
+    position: absolute;
+    top: 15rem;
+    right: 5rem;
+    background-color: black;
+    max-width: 50vw;
+}
+
+#presentation-text{
+    transform: skewX(-10deg); 
+}
+
+table{
+    position: absolute;
+
+    padding: 0.5rem;
+    width: 30vw;
+
+    top: 25rem;
+    right: 5rem;
+
+    background-color: white;
+    border: solid 0.7rem black;
+}
+
+.stats{
+    width: 150px;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.progress{
+    width: 100%;
+    height: 1rem;
+    background-color: gray;
+    overflow: hidden;
+}
+
+.filled{
+    height: 1rem;
+    background-color: red;
+    transition: width 0.3s ease;
+}

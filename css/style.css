@@ -142,6 +142,17 @@ div > p {
     }
 }
 
+#review-button{
+    position: absolute;
+
+    background-color: black;
+
+    padding: 1rem;
+
+    bottom: 1rem;
+    left: 1rem;
+}
+
 #pass-button{
     position: absolute;
 
@@ -173,7 +184,14 @@ div > p {
     font-size: large;
 }
 
-#white img{
+#review-button img{
+    float: right;
+    margin-right: -4rem;
+    margin-bottom: 2.5rem;
+    height: 5rem;
+}
+
+#pass-button img{
     float: left;
     margin-left: -4rem;
     margin-bottom: 2.5rem;
