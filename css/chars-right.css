@@ -18,8 +18,10 @@ h1{
 
 h2{
     position: absolute;
-    top: 10rem;
-    left: 5rem;
+    top: 11rem;
+    left: 5.5rem;
+
+    transform: rotate(359deg);
 
     font-size: 2rem;
     font-style: italic;
@@ -28,12 +30,41 @@ h2{
 
 h3{
     position: absolute;
-    top: 20rem;
+    top: 22rem;
     left: 5rem;
+
+    transform: rotate(2deg);
 
     font-size: 2rem;
     font-style: italic;
     color: white;
+}
+
+@media only screen and (max-width: 600px) {
+h1{
+    font-size: 2rem;
+
+    top: 1rem;
+    left: 0.5rem;
+}
+
+h2{
+    top: 4rem;
+    left: 0.55rem;
+
+    transform: rotate(359deg);
+
+    font-size: 1rem;
+}
+
+h3{
+    top: 21rem;
+    left: 0.55rem;
+
+    transform: rotate(2deg);
+
+    font-size: 1rem;
+}
 }
 
 #char{
@@ -48,7 +79,7 @@ h3{
 #presentation{
     border: solid 0.4rem white;
 
-    transform: skewX(10deg); 
+    transform: skewX(350deg) rotate(359deg);
 
     color: white;
 
@@ -62,7 +93,32 @@ h3{
 }
 
 #presentation-text{
-    transform: skewX(-10deg); 
+    transform: skewX(-350deg)  rotate(-359deg); 
+}
+
+
+@media only screen and (max-width: 600px) {
+#char{
+    width: 150vw;
+    height: 100vh;
+    margin-right:-5rem;
+    margin-bottom:-1rem
+}
+
+#presentation{
+    padding: 0.5rem;
+
+    font-size: 0.6rem;
+    transform: skewX(-0deg) rotate(0deg);
+    top: 6rem;
+    left: 0.55rem;
+    max-width: 30vw;
+}
+
+#presentation-text{
+    transform: skewX(0deg)  rotate(0deg); 
+    font-weight: lighter;
+}
 }
 
 table{
@@ -71,8 +127,10 @@ table{
     padding: 0.5rem;
     width: 30vw;
 
-    top: 25rem;
+    top: 27rem;
     left: 5rem;
+
+    transform: rotate(2deg);
 
     background-color: white;
     border: solid 0.7rem black;
@@ -97,4 +155,25 @@ table{
     height: 1rem;
     background-color: red;
     transition: width 0.3s ease;
+}
+
+@media only screen and (max-width: 600px) {
+table{
+    padding: 0.1rem;
+    width: 60vw;
+
+    top: 24rem;
+    left: 0.54rem;
+
+    transform: rotate(2deg);
+    border: solid 0.4rem black;
+}
+
+.stats{
+    width: 20%;
+    max-width: 20%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 }
