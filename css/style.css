@@ -202,14 +202,14 @@ div > p {
 #review-button{
     padding: 0.5rem;
     max-width: 30vw;
-    bottom: 1rem;
+    bottom: 2.5rem;
     left: 1rem;
 }
 
 #pass-button{
     padding: 0.5rem;
     max-width: 30vw;
-    bottom: 1rem;
+    bottom: 2.5rem;
     right: 1rem;
 }
 
